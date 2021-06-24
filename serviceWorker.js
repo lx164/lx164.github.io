@@ -22,18 +22,20 @@ self.addEventListener("fetch", event => {
 });
 
 // eslint-disable-next-line no-restricted-globals
-self.addEventListener('activate', function(e) {
+self.addEventListener('activate', e => {
   e.waitUntil(
-    Promise.all(
-      caches.keys().then(cacheNames => {
-        return cacheNames.map(name => {
-          if (name !== cacheStorageKey) {
-            return caches.delete(name)
-          }
-        })
-      })
-    ).then(() => {
-      return self.clients.claim()
-    })
-  )
+    caches.delete(cacheName));
+  // e.waitUntil(
+  //   Promise.all(
+  //     caches.keys().then(cacheNames => {
+  //       return cacheNames.map(name => {
+  //         if (name !== cacheStorageKey) {
+  //           return caches.delete(name)
+  //         }
+  //       })
+  //     })
+  //   ).then(() => {
+  //     return self.clients.claim()
+  //   })
+  // )
 })
