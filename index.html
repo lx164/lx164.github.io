@@ -7,14 +7,14 @@
   <title>在线图片加水印，canvas加水印,防止身份证复印件被盗</title>
   <meta name="keywords" content="图片加水印,在线给图片加水印,在线照片加水印,在线给图片加文字,canvas加水印,canvas图片旋转,防止身份证复印件被盗" />
   <meta name="description" content="在线给图片加水印，通过前端canvas给你的个人证件加上水印，防止身份证复印件被盗。纯前端加水印，拒绝上传保证个人信息安全！" />
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="./index.css" />
 
-  <link rel="manifest" href="/manifest.json" />
+  <link rel="manifest" href="./manifest.json" />
   <script>
     // serviceWorker
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker
-        .register("/serviceWorker.js")
+        .register("serverWorker.js")
         .then(res => console.log("service worker registered"))
         .catch(err => console.log("service worker not registered", err));
     }
@@ -25,7 +25,7 @@
 <body>
 
   <div id="root"></div>
-  <script src="index.js"></script>
+  <script src="./index.js"></script>
 
 </body>
 
