@@ -1,24 +1,24 @@
 {
   "name": "在线图片加水印",
   "short_name": "图片加水印",
-  "theme_color": "#f85758",
-  "background_color": "#f85758",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
   "display": "fullscreen",
   "scope": "/",
   "start_url": "/",
   "icons": [
     {
-      "src": "logo72x72.png",
+      "src": "https://cdn.jsdelivr.net/gh/LiangSenCheng/blog-img/app/add-water/watermark-icon.png",
       "type": "image/png",
       "sizes": "72x72"
     },
     {
-      "src": "logo96x96.png",
+      "src": "https://cdn.jsdelivr.net/gh/LiangSenCheng/blog-img/app/add-water/watermark-icon.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "logo144x144.png",
+      "src": "https://cdn.jsdelivr.net/gh/LiangSenCheng/blog-img/app/add-water/watermark-icon.png",
       "type": "image/png",
       "sizes": "144x144"
     }
