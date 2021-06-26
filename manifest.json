@@ -8,17 +8,17 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "https://cdn.jsdelivr.net/gh/LiangSenCheng/blog-img/app/add-water/watermark-icon.png",
+      "src": "https://cdn.jsdelivr.net/gh/LiangSenCheng/blog-img/app/add-water/icon72.png",
       "type": "image/png",
       "sizes": "72x72"
     },
     {
-      "src": "https://cdn.jsdelivr.net/gh/LiangSenCheng/blog-img/app/add-water/watermark-icon.png",
+      "src": "https://cdn.jsdelivr.net/gh/LiangSenCheng/blog-img/app/add-water/icon96.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "https://cdn.jsdelivr.net/gh/LiangSenCheng/blog-img/app/add-water/watermark-icon.png",
+      "src": "https://cdn.jsdelivr.net/gh/LiangSenCheng/blog-img/app/add-water/icon144.png",
       "type": "image/png",
       "sizes": "144x144"
     }
