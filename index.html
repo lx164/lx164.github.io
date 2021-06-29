@@ -21,15 +21,33 @@
       })
     }
 
+    var deferredPrompt = null;
+
+    // 判断用户是否安装此应用：beforeinstallprompt
+    window.addEventListener("beforeinstallprompt", e => {
+      e.preventDefault();
+      deferredPrompt = e;
+      console.log('beforeinstallprompt');
+    });
+    
+    window.addEventListener("appinstalled", () => {
+      deferredPrompt = null;
+      console.log('appinstalled');
+    });
+
+    function addToDesktop() {
+      console.log('addToDesktop');
+      deferredPrompt.prompt();
+      deferredPrompt = null;
+    }
   </script>
 
 </head>
 
 <body>
-
   <div id="root"></div>
   <script src="./index.js"></script>
-
+  <button onclick="addToDesktop()">添加到桌面</button>
 </body>
 
 </html>

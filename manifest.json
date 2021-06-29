@@ -3,7 +3,7 @@
   "short_name": "图片加水印",
   "theme_color": "#FFFFFF",
   "background_color": "#FFFFFF",
-  "display": "fullscreen",
+  "display": "standalone",
   "scope": "/",
   "start_url": "/",
   "icons": [
