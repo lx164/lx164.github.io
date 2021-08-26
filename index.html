@@ -23,7 +23,7 @@
 
     var deferredPrompt = null;
 
-    // 判断用户是否安装此应用：beforeinstallprompt
+    // 判断用户是否安装此应用: beforeinstallprompt
     window.addEventListener("beforeinstallprompt", e => {
       e.preventDefault();
       deferredPrompt = e;
